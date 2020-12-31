@@ -1,0 +1,66 @@
+
+
+.navItemsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  position: absolute;
+  right: -205px;
+  bottom: -82vh;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.8;
+}
+
+.word {
+  position: relative;
+  z-index: 2000;
+}
+
+.underlineContainer {
+  position: relative;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+}
+
+.underlineContainer:hover .underline::after {
+  opacity: 1;
+  transition: 0.3s ease all;
+}
+
+.underlineContainer .underline::after {
+  top: 38%;
+  height: 12px;
+  width: 0%;
+  left: -2%;
+  background-color: #D75D47;
+  transition: 0.5s ease all .3s;
+}
+
+.underlineContainer:hover .underline::after {
+  width: 102%;
+  transition: 0.3s ease all;
+}
+
+@media (max-width: 1200px) {
+  .navItemsList {
+    position: absolute;
+    text-align: -webkit-right;
+    transform: none;
+    color: #EDECE0;
+    right: 6px;
+    bottom: -80vh;
+  }
+}
+
+

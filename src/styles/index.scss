@@ -1,0 +1,26 @@
+@import "../static/fonts/font.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400&display=swap');
+
+$rose: #292F36;
+
+body {
+  background-color: #f3f0ec;
+  font-family: "Karla";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+
+

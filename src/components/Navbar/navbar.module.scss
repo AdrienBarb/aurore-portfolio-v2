@@ -1,0 +1,25 @@
+.navbarContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.6rem 0;
+}
+
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navLinksContainer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    float: right;
+
+    li {
+        display: inline;
+        margin-left: 1rem;
+    }
+}

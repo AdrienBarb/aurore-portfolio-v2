@@ -1,0 +1,90 @@
+.app {
+  visibility: hidden;
+}
+
+.image {
+  position: relative;
+  max-width: 600px;
+  height: 80vh;
+  background-image: url("../styles/images/picture.jpeg");
+  display: block;
+  width: 520px;
+  background-size: cover;
+  z-index: 2000;
+  margin: 0 auto;
+}
+
+.skillsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: end;
+  font-size: 52px;
+  position: absolute;
+  left: 8px;
+  top: -4px;
+  text-align: left;
+  z-index: 10000;
+  font-family: 'Rubik';
+  font-weight: 400i;
+}
+
+.skillsList:hover li {
+  color: #A73825;
+}
+
+.skillsList:hover li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sentenceContainer {
+  position: absolute;
+  opacity: 1;
+  width: auto;
+  font-size: 18px;
+  top: 38vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10000;
+  max-width: 500px;
+  width: 100%;
+  color:white;
+  font-size: 26px;
+}
+
+.sentence {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+.sentenceVisible {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s all;
+}
+
+.displayNone {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 1200px) {
+
+
+  .image {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills_image_navItems {
+    width: 80%;
+  }
+}
+
+
