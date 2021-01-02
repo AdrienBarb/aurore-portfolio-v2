@@ -5,7 +5,7 @@ import NavItems from '../components/navItems/navItems';
 import Sentence from '../components/Sentence/Sentence';
 import Backdrop from '../components/Backdrop/Backdrop';
 import Layout from '../components/Layout/Layout';
-import { Power3, TimelineMax } from "gsap/all";
+import { gsap } from "gsap/all";
 
 
 const IndexPage = () => {
@@ -19,14 +19,14 @@ const IndexPage = () => {
   let skills = useRef(null);
   let navItems = useRef(null);
 
-  const timeline = new TimelineMax();
+  const timeline = gsap.timeline();
 
   useEffect(() => {
     timeline.to(app.current, {duration: 1, css: {visibility: 'visible'}})
-    timeline.from(picture.current, {duration: 1, opacity: 0, y: -40, ease: Power3.easeOut, delay: 0.2 })
-            .from(skills.current, {duration: 1, opacity: 0, x: -40, ease: Power3.easeOut }, '-=0.7')
-            .from(navItems.current, {duration: 1, opacity: 0, x: 40, ease: Power3.easeOut }, '-=0.7');
-  })
+    timeline.from(picture.current, {duration: 1, opacity: 0, y: -40, ease: "power3.inOut", delay: 0.2 })
+            .from(skills.current, {duration: 1, opacity: 0, x: -40, ease: "power3.inOut" }, '-=0.7')
+            .from(navItems.current, {duration: 1, opacity: 0, x: 40, ease: "power3.inOut" }, '-=0.7');
+  }, [])
 
   const sentence = (
     <div className={classes.sentenceContainer}>
