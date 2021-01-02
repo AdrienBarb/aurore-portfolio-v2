@@ -21,7 +21,7 @@ const NavItems = (props) => {
           <div className={classes.underline}><Link onClick={event => handle(event, 'work')} className={classes.word} to="/work">WORKS</Link></div>
         </li>
         <li className={classes.underlineContainer}>
-          <div onClick={props.fonction} className={classes.underline}><Link onClick={event => handle(event, 'project')} className={classes.word} to="/project">PROJECT</Link></div>
+          <div className={classes.underline}><Link onClick={event => handle(event, 'project')} className={classes.word} to="/project">PROJECT</Link></div>
         </li>
         <li className={classes.underlineContainer}>
           <div className={classes.underline}><Link onClick={event => handle(event, 'biography')} className={classes.word} to="/biography">BIOGRAPHY</Link></div>

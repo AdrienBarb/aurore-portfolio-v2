@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Layout from '../components/Layout/Layout';
-import { graphql, useStaticQuery } from 'gatsby';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { graphql } from 'gatsby';
 
 
 export const PageQuery = graphql`

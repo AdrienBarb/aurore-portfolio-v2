@@ -26,7 +26,7 @@ const IndexPage = () => {
     timeline.from(picture.current, {duration: 1, opacity: 0, y: -40, ease: Power3.easeOut, delay: 0.2 })
             .from(skills.current, {duration: 1, opacity: 0, x: -40, ease: Power3.easeOut }, '-=0.7')
             .from(navItems.current, {duration: 1, opacity: 0, x: 40, ease: Power3.easeOut }, '-=0.7');
-  }, [])
+  })
 
   const sentence = (
     <div className={classes.sentenceContainer}>
