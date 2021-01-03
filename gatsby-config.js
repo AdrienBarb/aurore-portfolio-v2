@@ -26,6 +26,10 @@ module.exports = {
           `Old Standard TT`,
           `source sans pro\:400, 700` // you can also specify font weights and styles
         ],
+        fonts: [
+          `Caveat`,
+          `source sans pro\:400, 700` // you can also specify font weights and styles
+        ],
         display: 'swap'
       }
     },

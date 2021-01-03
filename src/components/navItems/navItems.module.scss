@@ -1,5 +1,4 @@
 
-
 .navItemsList {
   margin: 0;
   padding: 0;
@@ -12,6 +11,7 @@
   font-weight: 300;
   font-size: 32px;
   line-height: 1.8;
+  
 }
 
 .word {
@@ -57,9 +57,12 @@
     position: absolute;
     text-align: -webkit-right;
     transform: none;
-    color: #EDECE0;
     right: 6px;
     bottom: -80vh;
+  }
+
+  .word {
+    color: #EDECE0;
   }
 }
 

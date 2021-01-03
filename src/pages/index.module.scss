@@ -1,5 +1,6 @@
 .app {
   visibility: hidden;
+  margin: 4rem auto;
 }
 
 .image {
@@ -14,70 +15,24 @@
   margin: 0 auto;
 }
 
-.skillsList {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: end;
-  font-size: 52px;
-  position: absolute;
-  left: 8px;
-  top: -4px;
-  text-align: left;
-  z-index: 10000;
-  font-family: 'Rubik';
-  font-weight: 400i;
-}
-
-.skillsList:hover li {
-  color: #A73825;
-}
-
-.skillsList:hover li:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.sentenceContainer {
-  position: absolute;
-  opacity: 1;
-  width: auto;
-  font-size: 18px;
-  top: 38vh;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 10000;
-  max-width: 500px;
-  width: 100%;
-  color:white;
-  font-size: 26px;
-}
-
 .sentence {
-  visibility: hidden;
-  opacity: 0;
   position: absolute;
+  top: -6px;
+  left: 4px;
+  font-size: 52px;
+  font-family: 'Rubik';
+  width: 420px;
+  z-index: 4000;
 }
 
-.sentenceVisible {
-  visibility: visible;
-  opacity: 1;
-  transition: 2s all;
-}
-
-.displayNone {
-  visibility: hidden;
-  opacity: 0;
+.colorizeWord {
+  color: #F5D33D;
 }
 
 @media (max-width: 1200px) {
-
-
   .image {
     max-width: 520px;
     width: 100%;
-    margin: 0 2rem;
   }
 }
 

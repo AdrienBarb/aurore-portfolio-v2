@@ -9,6 +9,17 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 22px;;
+}
+
+.name:hover {
+    font-style: italic;
 }
 
 .navLinksContainer {
@@ -16,10 +27,13 @@
     margin: 0;
     padding: 0;
     width: fit-content;
-    float: right;
 
     li {
         display: inline;
         margin-left: 1rem;
+    }
+
+    li:hover {
+        font-style: italic;
     }
 }
