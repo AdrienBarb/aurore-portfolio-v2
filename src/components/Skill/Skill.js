@@ -1,6 +1,5 @@
-import { mergeClasses } from '@material-ui/styles'
 import React from 'react'
-import classes from './Skill.module.scss'
+import classes from './Skill.module.css'
 
 const Skill = (props) => {
     return (
