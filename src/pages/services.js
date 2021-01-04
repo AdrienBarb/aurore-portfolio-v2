@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Layout from '../components/Layout/Layout';
 import classes from "./services.module.scss";
-import Sentence from '../components/Sentence/Sentence';
 import Backdrop from '../components/Backdrop/Backdrop';
 import Skill from '../components/Skill/Skill';
 import { HiX } from "react-icons/hi";
+
 
 
 const ProjectPage = () => {

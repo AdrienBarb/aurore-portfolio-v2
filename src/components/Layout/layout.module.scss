@@ -2,3 +2,9 @@
   box-sizing: border-box;
   margin: 10rem 6rem 0 6rem;
 }
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 10rem 2rem 0 2rem;
+  }
+}
