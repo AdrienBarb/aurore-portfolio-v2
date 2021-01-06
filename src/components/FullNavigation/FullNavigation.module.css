@@ -6,6 +6,7 @@
     left: 0;
     right: 0;
     background-color: #ffd56b;
+    z-index: 20000;
     
 }
 

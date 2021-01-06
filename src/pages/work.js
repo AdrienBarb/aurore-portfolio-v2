@@ -25,7 +25,7 @@ const WorkPage = () => {
           <ul>
             {data.allContentfulWorks.edges.map((edge) => {
               return (
-                <li>
+                <li key={edge.node.title}>
                   {edge.node.title}
                 </li>
               )
