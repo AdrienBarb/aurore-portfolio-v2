@@ -7,15 +7,14 @@ import { gsap } from "gsap/all";
 
 
 const IndexPage = () => {
-
   let app = useRef(null);
   let picture = useRef(null);
 
   const timeline = gsap.timeline();
 
   useEffect(() => {
-    timeline.to(app.current, {duration: 1, css: {visibility: 'visible'}})
-    timeline.from(picture.current, {duration: 1, opacity: 0, ease: "power3.inOut", delay: 0.2 });
+    timeline.to(app.current, {duration: 0.6, css: {visibility: 'visible'}})
+    timeline.from(picture.current, {duration: 0.6, opacity: 0, ease: "power2.inOut" });
   }, [])
 
   return (
