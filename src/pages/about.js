@@ -14,7 +14,7 @@ query {
 }
 `;
 
-const BiographyPage = (props) => {
+const about = (props) => {
 
   return (
     <div>
@@ -28,4 +28,4 @@ const BiographyPage = (props) => {
   )
 }
 
-export default BiographyPage
+export default about

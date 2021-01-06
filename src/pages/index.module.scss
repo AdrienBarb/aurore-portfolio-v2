@@ -4,15 +4,18 @@
 }
 
 .image {
-  position: relative;
+  position: absolute;
   max-width: 600px;
-  height: 80vh;
+  height: 76vh;
   background-image: url("../styles/images/picture.jpeg");
   display: block;
   width: 520px;
   background-size: cover;
   z-index: 2000;
   margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16vh;
 }
 
 .sentence {
