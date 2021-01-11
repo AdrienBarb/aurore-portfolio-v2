@@ -8,6 +8,7 @@
     z-index: 0;
     opacity: 0;
     transition: 0.8s all;
+    overflow: hidden;
 }
 
 .showDescription {
@@ -40,6 +41,6 @@
 
 @media (max-width: 568px) {
     .description {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
