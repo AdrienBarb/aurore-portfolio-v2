@@ -3,52 +3,48 @@
   margin: 4rem auto;
 }
 
-.image {
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 16vh;
-}
-
 .video {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 500;
 }
 
-.image img {
-  width: 160px;
-}
-
-.sentence {
+.name {
   position: absolute;
-  top: -6px;
-  left: 4px;
-  font-size: 52px;
-  font-family: 'Rubik';
-  width: 420px;
-  z-index: 4000;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  font-weight: 400;
+  z-index: 3000;
+  color: white;
+  opacity: 1;
+  cursor: url(../styles/images/arrow.svg), auto;
 }
 
-.colorizeWord {
-  color: #F5D33D;
+.close {
+  color: white;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  z-index: 2000;
+  font-size: 22px;
+  cursor: url(../styles/images/arrow.svg), auto;
 }
 
-@media (max-width: 1200px) {
-  .image {
-    max-width: 520px;
-    width: 100%;
-  }
+.display {
+  opacity: 1
 }
 
-@media (max-width: 650px) {
-  .skills_image_navItems {
-    width: 80%;
-  }
+.hide {
+  opacity: 0;
+  z-index: 0;
 }
-
 
