@@ -5,16 +5,23 @@
 
 .image {
   position: absolute;
-  max-width: 600px;
-  height: 76vh;
-  background-image: url("../styles/images/picture.jpeg");
   display: block;
-  width: 520px;
-  background-size: cover;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
   top: 16vh;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.image img {
+  width: 160px;
 }
 
 .sentence {

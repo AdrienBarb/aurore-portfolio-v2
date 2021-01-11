@@ -1,0 +1,58 @@
+
+.workSectionContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    cursor: url(../../styles/images/arrow.svg), auto;
+}
+
+
+.description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: 675px;
+    color: black;
+    mix-blend-mode: difference;
+}
+
+.more {
+    margin-right: 2rem;
+}
+
+.image {
+    width: 86%;
+    position: relative;
+}
+
+.image img {
+    width: 100;
+    filter: grayscale(100%);
+}
+
+.image img:hover {
+    transition: 0.4s all;
+    filter: none;
+}
+
+.onLeft {
+    justify-content: flex-start;
+}
+
+.onRight {
+    justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .image {
+        width: 100%;
+        position: relative;
+    }
+}

@@ -4,6 +4,7 @@ import classes from "./index.module.scss";
 import Layout from '../components/Layout/Layout';
 import Navbar from '../components/Navbar/Navbar';
 import { gsap } from "gsap/all";
+import video from '../styles/images/video.mp4';
 
 
 const IndexPage = () => {
@@ -21,8 +22,13 @@ const IndexPage = () => {
     <div ref={app} className={classes.app}>
       <Navbar />
       <Layout>
-        <div className={classes.image} ref={picture} >
-        </div>
+        {/* <div className={classes.image} ref={picture} >
+
+        </div> */}
+
+        <video autoPlay muted loop className={classes.video}>
+            <source src={video} type='video/mp4' />
+        </video>
       </Layout>
     </div> 
   )

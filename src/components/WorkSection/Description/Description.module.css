@@ -1,0 +1,45 @@
+.descriptionContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffd56b;
+    z-index: 0;
+    opacity: 0;
+    transition: 0.8s all;
+}
+
+.showDescription {
+    z-index: 4000;
+    opacity: 1;
+    transition: 0.8s opacity;
+}
+
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 400;
+    color: #F5AF00;
+    max-width: 76%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .description {
+        font-size: 22px;
+        max-width: 96%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .description {
+        font-size: 18px;
+    }
+}

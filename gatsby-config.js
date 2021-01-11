@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-sass",
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-theme-material-ui`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
