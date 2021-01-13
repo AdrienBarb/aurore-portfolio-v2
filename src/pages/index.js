@@ -11,14 +11,13 @@ import HomeMenu from '../components/HomeMenu/HomeMenu'
 const IndexPage = () => {
   const [showMenu, setShowMenu] = useState(false)
 
-  let app = useRef(null);
-  let picture = useRef(null);
+  let menu = useRef(null);
+  let app = useRef(null)
 
   const timeline = gsap.timeline();
 
   useEffect(() => {
-    timeline.to(app.current, {duration: 0.6, css: {visibility: 'visible'}})
-    timeline.from(picture.current, {duration: 0.6, opacity: 0, ease: "power2.inOut" });
+    timeline.to(app.current, {duration: 0.2, css: {visibility: 'visible'}})
   }, [])
 
   const clickHandler = () => {
@@ -30,11 +29,8 @@ const IndexPage = () => {
   return (
     <div ref={app} className={classes.app}>
       <Layout>
-        <div onClick={() => clickHandler()} className={`${classes.name} ${showMenu ? classes.hide : ''}`}>
-          Aurore Demierre
-        </div>
+
         <HomeMenu show={showMenu}/>
-        <div onClick={() => setShowMenu(!showMenu)} className={`${classes.close} ${showMenu ? classes.display : ''}`}>Close</div>
         <video autoPlay muted loop className={classes.video}>
             <source src={video} type='video/mp4' />
         </video>

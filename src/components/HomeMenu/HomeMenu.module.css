@@ -1,15 +1,50 @@
 .homeMenuWrapper {
-    opacity: 0;
     z-index: 2000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
 }
 
-.displayMenu {
+.display {
     opacity: 1;
 }
+
+.hide {
+    opacity: 0;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
+    font-size: 18px;
+    cursor: url(../../styles/images/arrow.svg), auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .name {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    font-weight: 400;
+    z-index: 3000;
+    color: white;
+    opacity: 1;
+    cursor: url(../../styles/images/arrow.svg), auto;
+  }
 
 .navLinksContainer {
     list-style: none;
