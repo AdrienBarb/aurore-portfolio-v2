@@ -6,14 +6,9 @@
     left: 0;
     right: 0;
     background-color: #ffd56b;
-    z-index: 20000;
-    opacity: 0;  
-    transition: 0.4s opacity;
-}
-
-.display {
-  opacity: 1;
-  transition: 0.4s opacity;
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .navLinksContainer {
@@ -63,3 +58,12 @@
     width: 102%;
     transition: 0.3s ease all;
   }
+
+.iconNav {
+    position: relative;
+    z-index: 40000 !important;
+}
+
+.iconWhite {
+    color: white;
+}

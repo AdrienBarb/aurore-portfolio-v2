@@ -9,17 +9,12 @@ import { Cross as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
     const matches = useMediaQuery('(min-width:768px)');
-    const [ shouldShow, setshouldShow ] = useState(false);
-    const [isOpen, setOpen] = useState(false)
 
 
         const iconNav = (
-            <div className={`${classes.iconNav} ${isOpen ? classes.iconWhite : null}`}>
-                <Hamburger  onClick={() => setshouldShow(!shouldShow)} toggled={isOpen} toggle={setOpen} />
-            </div>
+            <FullNavigation />
         )
 
-        console.log(isOpen)
    
         const classicNav = (
             <ul className={classes.navLinksContainer}>
@@ -46,7 +41,7 @@ const Navbar = () => {
                     {matches ? classicNav : iconNav}
                 </div>
             </div>
-            <FullNavigation show={isOpen}/>
+            
         </div>
     )
 }
