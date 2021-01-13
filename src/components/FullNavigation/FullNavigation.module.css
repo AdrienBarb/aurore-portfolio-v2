@@ -7,7 +7,13 @@
     right: 0;
     background-color: #ffd56b;
     z-index: 20000;
-    
+    opacity: 0;  
+    transition: 0.4s opacity;
+}
+
+.display {
+  opacity: 1;
+  transition: 0.4s opacity;
 }
 
 .navLinksContainer {
@@ -16,8 +22,8 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    margin-top: 26vh;
+    top: 50%;
+    transform: translate(-50%, -50%);
     list-style: none;
     padding: 0;
     width: fit-content;

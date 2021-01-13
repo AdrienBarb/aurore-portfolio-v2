@@ -4,16 +4,22 @@ import { Link } from "gatsby";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import FullNavigation from '../FullNavigation/FullNavigation';
+import { Cross as Hamburger } from 'hamburger-react'
 
 
 const Navbar = () => {
     const matches = useMediaQuery('(min-width:768px)');
     const [ shouldShow, setshouldShow ] = useState(false);
+    const [isOpen, setOpen] = useState(false)
 
 
         const iconNav = (
-            <HiOutlineMenuAlt4 className={`${classes.iconNav} ${shouldShow ? classes.iconWhite : null}`} onClick={() => setshouldShow(!shouldShow)}/>
+            <div className={`${classes.iconNav} ${isOpen ? classes.iconWhite : null}`}>
+                <Hamburger  onClick={() => setshouldShow(!shouldShow)} toggled={isOpen} toggle={setOpen} />
+            </div>
         )
+
+        console.log(isOpen)
    
         const classicNav = (
             <ul className={classes.navLinksContainer}>
@@ -40,7 +46,7 @@ const Navbar = () => {
                     {matches ? classicNav : iconNav}
                 </div>
             </div>
-            <FullNavigation show={shouldShow}/>
+            <FullNavigation show={isOpen}/>
         </div>
     )
 }

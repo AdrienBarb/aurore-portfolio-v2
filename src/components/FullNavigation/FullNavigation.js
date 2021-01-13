@@ -5,8 +5,10 @@ import { Link } from "gatsby";
 const FullNavigation = (props) => {
     const [ show, setshow ] = useState(false);
 
-    const fullNav = (
-        <div className={classes.fullNavigation}>
+
+
+    return (
+        <div className={`${classes.fullNavigation} ${props.show ? classes.display : ''}`}>
             <ul className={classes.navLinksContainer}>
                 <li className={classes.underlineContainer}>
                     <Link className={classes.underline} to="/work">WORK</Link>
@@ -18,12 +20,6 @@ const FullNavigation = (props) => {
                     <Link className={classes.underline} to="/contact">CONTACT</Link>
                 </li>
             </ul>
-        </div>
-    )
-
-    return (
-        <div>
-            {props.show ? fullNav : ''}
         </div>
     )
 }

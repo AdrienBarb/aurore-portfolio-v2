@@ -33,6 +33,7 @@
     "gatsby-theme-material-ui": "^1.0.13",
     "gatsby-transformer-sharp": "^2.10.0",
     "gsap": "^3.5.1",
+    "hamburger-react": "^2.4.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
