@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Layout from '../components/Layout/Layout';
 import { graphql } from 'gatsby';
+import classes from './Biography.module.css'
 
 
 export const PageQuery = graphql`
@@ -20,9 +21,9 @@ const about = (props) => {
     <div>
       <Navbar />
       <Layout>
-          <p>
+          <div className={classes.biography}>
             {props.data.contentfulAurore.bio.bio}
-          </p>
+          </div>
       </Layout>
     </div>
   )

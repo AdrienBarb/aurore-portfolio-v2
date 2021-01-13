@@ -1,4 +1,4 @@
-.homeMenuWrapper {
+.homeMenuContainer {
     z-index: 2000;
     position: absolute;
     top: 50%;
@@ -16,6 +16,11 @@
     opacity: 0;
 }
 
+.homeMenuWrapper {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .close {
     color: white;
     position: absolute;
@@ -31,6 +36,8 @@
 
   .name {
     position: absolute;
+    width: 600px;
+    font-family: 'Rubik';
     opacity: 1;
     visibility: visible;
     text-align: center;

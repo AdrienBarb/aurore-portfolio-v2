@@ -16,8 +16,11 @@ const IndexPage = () => {
 
   const timeline = gsap.timeline();
 
+  console.log(menu)
+
   useEffect(() => {
     timeline.to(app.current, {duration: 0.2, css: {visibility: 'visible'}})
+    console.log(menu)
   }, [])
 
   const clickHandler = () => {
@@ -29,8 +32,7 @@ const IndexPage = () => {
   return (
     <div ref={app} className={classes.app}>
       <Layout>
-
-        <HomeMenu show={showMenu}/>
+        <HomeMenu ref={menu} show={showMenu}/>
         <video autoPlay muted loop className={classes.video}>
             <source src={video} type='video/mp4' />
         </video>
