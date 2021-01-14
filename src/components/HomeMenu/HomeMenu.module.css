@@ -47,7 +47,7 @@
     margin: 0 1rem;
 }
 
-.navLinksContainer a {
+.navLinksContainer {
     color: white;
     font-size: 32px;
     cursor: url(../../styles/images/arrow.svg), auto;
