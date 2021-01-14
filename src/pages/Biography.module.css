@@ -4,14 +4,24 @@
     font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-    .biography {
-        font-size: 32px;
-    }
+.bio {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: justify;
 }
 
-@media (max-width: 425px) {
-    .biography {
-        font-size: 16px;
-    }
+.bioWrap {
+    width: 100%;
+    max-width: 700px;
+    margin: 9rem auto 0 auto;
+    padding: 0 2rem;
+}
+
+.about {
+    font-size: 26px;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    color: #FFCB47;
+    font-family: 'Rubik';
 }

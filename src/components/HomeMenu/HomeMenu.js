@@ -12,8 +12,8 @@ const HomeMenu = (props) => {
     const timeline = gsap.timeline();
 
     useEffect(() => {
-        timeline.to(all.current, {duration: 0.2, css: {visibility: 'visible'}})
-        timeline.to(all.current, {duration: 3, opacity: 1, ease: "power2.inOut" });
+        gsap.to(all.current, {duration: 0.6, css: {visibility: 'visible'}})
+        gsap.to(name.current, {duration: 3, opacity: 1, ease: "power2.inOut" })
       }, [])
 
     const clickHandler = () => {
