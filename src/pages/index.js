@@ -6,12 +6,11 @@ import Navbar from '../components/Navbar/Navbar';
 import { gsap } from "gsap/all";
 import video from '../styles/images/video.mp4';
 import HomeMenu from '../components/HomeMenu/HomeMenu'
+import { navigate } from "gatsby";
 
 
 const IndexPage = () => {
-  const [showMenu, setShowMenu] = useState(false)
-
-  let menu = useRef(null);
+  let menu = useRef(null)
   let app = useRef(null)
 
   const timeline = gsap.timeline();
@@ -20,19 +19,21 @@ const IndexPage = () => {
 
   useEffect(() => {
     timeline.to(app.current, {duration: 0.2, css: {visibility: 'visible'}})
-    console.log(menu)
+    timeline.to(app.current, {duration: 0.6, opacity: 1, ease: "power2.inOut" });
   }, [])
 
-  const clickHandler = () => {
-    setShowMenu(!showMenu)
+  const navigationHandler = (dir) => {
+    console.log(dir)
+    timeline.to(app.current, {duration: 0.4, opacity: 0})
+    setTimeout(() => {
+        navigate(`/${dir}`)
+    }, 600);
   }
-
-  console.log(showMenu)
 
   return (
     <div ref={app} className={classes.app}>
       <Layout>
-        <HomeMenu ref={menu} show={showMenu}/>
+        <HomeMenu function={(dir) => navigationHandler(dir)}/>
         <video autoPlay muted loop className={classes.video}>
             <source src={video} type='video/mp4' />
         </video>

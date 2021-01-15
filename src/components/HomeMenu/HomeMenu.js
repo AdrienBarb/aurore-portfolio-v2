@@ -34,18 +34,6 @@ const HomeMenu = (props) => {
         timeline.to(name.current, {duration: 0.4, opacity: 1, ease: "power2.inOut" });
     }
 
-    const onNavigation = (page) => {
-        timeline.to(close.current, {duration: 0.4, opacity: 0, ease: "power2.inOut", delay: -0.2 });
-        timeline.to(close.current, {duration: 0, css: {visibility: 'hidden'}, delay: -0.2})
-        timeline.to(menu.current, {duration: 0.4, opacity: 0, ease: "power2.inOut" });
-        timeline.to(menu.current, {duration: 0, css: {visibility: 'hidden'}})
-        console.log('hello')
-        setTimeout(() => {
-            navigate(`/${page}`)
-        }, 1000);
-        
-    }
-
     return (
         <div ref={all} className={classes.homeMenuWrapper}>
             <div ref={name} onClick={() => clickHandler()} className={`${classes.name}`}>
@@ -54,13 +42,13 @@ const HomeMenu = (props) => {
             <div ref={menu} className={classes.homeMenuContainer}>
                 <ul className={classes.navLinksContainer}>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => onNavigation('work')}  className={classes.underline}>WORK</div>
+                        <div onClick={() => props.function('work')}  className={classes.underline}>WORK</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => onNavigation('about')}  className={classes.underline}>ABOUT</div>
+                        <div onClick={() => props.function('about')}  className={classes.underline}>ABOUT</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => onNavigation('contact')}  className={classes.underline}>CONTACT</div>
+                        <div onClick={() => props.function('contact')}  className={classes.underline}>CONTACT</div>
                     </li>
                 </ul>
             </div>

@@ -26,6 +26,11 @@
     text-align: justify;
 }
 
+.app {
+    visibility: hidden;
+    opacity: 0;
+}
+
 @media (max-width: 425px) {
     .bio {
         font-size: 22px;

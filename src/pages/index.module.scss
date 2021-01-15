@@ -1,6 +1,7 @@
 .app {
   visibility: hidden;
   margin: 4rem auto;
+  opacity: 0;
 }
 
 .video {
@@ -11,10 +12,6 @@
   bottom: 0;
   z-index: 500;
 }
-
-
-
-
 
 .display {
   opacity: 1

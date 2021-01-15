@@ -10,8 +10,6 @@ const WorkSection = (props) => {
         setShowDescription(!showDescription)
     }
 
-    console.log(showDescription)
-
     return (
             <div onClick={() => clickHandler()} className={`${classes.workSectionContainer} ${props.counter % 2 == 0 ? classes.onLeft : classes.onRight}`}>
                 
