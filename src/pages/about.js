@@ -26,8 +26,8 @@ const about = (props) => {
           </div> */}
           <div className={classes.bioWrap}>
             <div className={classes.about}>ABOUT</div>
-            <div className={classes.bio}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-            <div className={classes.bio}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <div className={classes.title}>Communication, PR & Social Media Freelancer</div>
+            <div className={classes.bio}> I see myself like a creative partner that challenge the ordinary : communication multitasker, with experience in the fashion and luxury sector, I am passionate about the challenges of a rapidly changing profession and faced of image challenge, reputation and influence. At a time when a hashtag, a tweet or an Instagram post can upset and move the lines, my knowledge of classic media, new players and techniques of digital communication are assets to design a relevant communication strategy and deploy it.</div>
           </div>
       </Layout>
     </div>

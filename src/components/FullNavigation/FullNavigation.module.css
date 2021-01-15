@@ -62,6 +62,7 @@
 .iconNav {
     position: relative;
     z-index: 40000 !important;
+    transform: translateX(+12px);
 }
 
 .iconWhite {
