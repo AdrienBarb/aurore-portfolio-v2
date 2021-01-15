@@ -2,34 +2,28 @@ import React, { useState } from 'react';
 import classes from './navbar.module.scss';
 import { Link } from "gatsby";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import FullNavigation from '../FullNavigation/FullNavigation';
-import { Cross as Hamburger } from 'hamburger-react'
-
 
 const Navbar = () => {
     const matches = useMediaQuery('(min-width:768px)');
 
+    const iconNav = (
+        <FullNavigation />
+    )
 
-        const iconNav = (
-            <FullNavigation />
-        )
-
-   
-        const classicNav = (
-            <ul className={classes.navLinksContainer}>
-                <li className={classes.underlineContainer}>
-                    <Link className={classes.underline} to="/work">WORK</Link>
-                </li>
-                <li className={classes.underlineContainer}>
-                    <Link className={classes.underline} to="/about">ABOUT</Link>
-                </li>
-                <li className={classes.underlineContainer}>
-                    <Link className={classes.underline} to="/contact">CONTACT</Link>
-                </li>
-            </ul>
-        )
-
+    const classicNav = (
+        <ul className={classes.navLinksContainer}>
+            <li className={classes.underlineContainer}>
+                <Link className={classes.underline} to="/work">WORK</Link>
+            </li>
+            <li className={classes.underlineContainer}>
+                <Link className={classes.underline} to="/about">ABOUT</Link>
+            </li>
+            <li className={classes.underlineContainer}>
+                <Link className={classes.underline} to="/contact">CONTACT</Link>
+            </li>
+        </ul>
+    )
 
     return (
         <div className={classes.navbarContainer}>

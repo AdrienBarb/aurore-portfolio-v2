@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import classes from './Work.module.css';
 import { gsap } from "gsap/all";
 
+
 const WorkPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -32,7 +33,7 @@ const WorkPage = () => {
 
   useEffect(() => {
     timeline.to(app.current, {duration: 0.2, css: {visibility: 'visible'}})
-    timeline.to(app.current, {duration: 0.6, opacity: 1, ease: "power2.inOut" });
+    timeline.to(app.current, {duration: 0.8, opacity: 1, ease: "power2.inOut" });
   }, [])
 
   return (

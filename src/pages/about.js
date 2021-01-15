@@ -18,6 +18,7 @@ query {
 `;
 
 const About = (props) => {
+
   let app = useRef(null)
   const timeline = gsap.timeline();
 

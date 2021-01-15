@@ -23,8 +23,7 @@ const IndexPage = () => {
   }, [])
 
   const navigationHandler = (dir) => {
-    console.log(dir)
-    timeline.to(app.current, {duration: 0.4, opacity: 0})
+    timeline.to(app.current, {duration: 0.6, opacity: 0})
     setTimeout(() => {
         navigate(`/${dir}`)
     }, 600);
