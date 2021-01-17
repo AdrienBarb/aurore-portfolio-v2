@@ -1,6 +1,11 @@
+.app {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .contactWrap {
     margin: 0 auto; 
-    max-width: 600px;
+    max-width: 680px;
     width: 100%;
     text-align: center;
 }
