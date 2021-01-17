@@ -2,9 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../styles/index.scss';
 import classes from "./index.module.scss";
 import Layout from '../components/Layout/Layout';
-import Navbar from '../components/Navbar/Navbar';
 import { gsap } from "gsap/all";
-import video from '../styles/images/video.mp4';
+import video from '../styles/images/site-aurore.mp4';
 import HomeMenu from '../components/HomeMenu/HomeMenu'
 import { navigate } from "gatsby";
 

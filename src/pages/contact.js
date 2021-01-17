@@ -23,14 +23,12 @@ const ContactPage = () => {
       <Navbar />
       <Layout>
         <div className={classes.contactWrap}>
-          <div className={classes.inTouch}>GET IN TOUCH !</div>
-          <div className={classes.contactDetails}>
-            <div className={classes.email}> <a href="mailto:aurore.demierre@gmail.com">aurore.demierre@gmail.com</a></div>
-            <div className={classes.phone}><a href="tel:0618018634">06 18 01 86 34</a></div>
-            <div className={classes.iconWrapper}>
-              <a href="https://www.linkedin.com/in/aurore-demierre/"><FaLinkedinIn className={classes.icon}/></a>
-              <a href="https://www.instagram.com/auroredemierre/"><FaInstagram className={classes.icon}/></a>
-            </div>
+          <p className={classes.title}>I <span className={classes.italic}>look</span> forward to hearing <span className={classes.italic}>from</span> you.</p>
+          <div className={classes.content}><a href="mailto:aurore.demierre@gmail.com">aurore.demierre@gmail.com</a></div>
+          <div className={classes.content}><a href="tel:0618018634">+33 6 18 01 86 34</a></div>
+          <div className={classes.iconWrapper}>
+            <a href="https://www.linkedin.com/in/aurore-demierre/"><FaLinkedinIn className={classes.icon}/></a>
+            <a href="https://www.instagram.com/auroredemierre/"><FaInstagram className={classes.icon}/></a>
           </div>
         </div>
       </Layout>

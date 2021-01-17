@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from './navbar.module.scss';
 import { Link } from "gatsby";
 import useMediaQuery from '@material-ui/core/useMediaQuery';

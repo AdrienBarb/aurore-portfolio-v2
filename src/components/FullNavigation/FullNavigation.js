@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import classes from './FullNavigation.module.css'
 import { Link } from "gatsby";
 import { gsap } from "gsap/all";

@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import classes from './HomeMenu.module.css'
-import { Link, navigate } from "gatsby";
 import { gsap } from "gsap/all";
 
 const HomeMenu = (props) => {
@@ -36,19 +35,19 @@ const HomeMenu = (props) => {
 
     return (
         <div ref={all} className={classes.homeMenuWrapper}>
-            <div ref={name} onClick={() => clickHandler()} className={`${classes.name}`}>
+            <div ref={name} onClick={() => clickHandler()} onKeyDown={() => clickHandler()} className={`${classes.name}`}>
                 AURORE DEMIERRE
             </div>
             <div ref={menu} className={classes.homeMenuContainer}>
                 <ul className={classes.navLinksContainer}>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('work')}  className={classes.underline}>WORK</div>
+                        <div onClick={() => props.function('work')} onKeyDown={() => props.function('work')}  className={classes.underline}>WORK</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('about')}  className={classes.underline}>ABOUT</div>
+                        <div onClick={() => props.function('about')} onKeyDown={() => props.function('work')}  className={classes.underline}>ABOUT</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('contact')}  className={classes.underline}>CONTACT</div>
+                        <div onClick={() => props.function('contact')} onKeyDown={() => props.function('work')}  className={classes.underline}>CONTACT</div>
                     </li>
                 </ul>
             </div>
