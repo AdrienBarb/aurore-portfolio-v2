@@ -23,7 +23,7 @@ const ContactPage = () => {
       <Navbar />
       <Layout>
         <div className={classes.contactWrap}>
-          <p className={classes.title}>I <span className={classes.italic}>look</span> forward to hearing <span className={classes.italic}>from</span> you.</p>
+          <p className={classes.title}>I <span className={classes.italic}>look</span> forward to hearing <span className={classes.italic}>from</span> you<span className={classes.dot}>.</span></p>
           <div className={classes.content}><a href="mailto:aurore.demierre@gmail.com">aurore.demierre@gmail.com</a></div>
           <div className={classes.content}><a href="tel:0618018634">+33 6 18 01 86 34</a></div>
           <div className={classes.iconWrapper}>
