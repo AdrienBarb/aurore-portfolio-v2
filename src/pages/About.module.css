@@ -1,26 +1,26 @@
 .bio {
-    font-size: 26px;
-    font-weight: 200;
-    margin-bottom: 2rem;
+    font-size: 62px;
+    font-weight: 600;
     text-align: justify;
+    line-height: 1.2;
 }
 
 .bioWrap {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .about {
-    font-size: 26px;
+    font-size: 38px;
     font-weight: 800;
     color: #FFCB47;
-    font-family: "Source Serif Pro";
     font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
     text-align: justify;
 }
@@ -32,7 +32,7 @@
 
 @media (max-width: 425px) {
     .bio {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .about {
