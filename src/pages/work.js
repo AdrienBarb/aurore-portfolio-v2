@@ -10,7 +10,12 @@ import { gsap } from "gsap/all";
 const WorkPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulWorks {
+      allContentfulWorks (
+        sort: {
+          fields: [updatedAt]
+          order: DESC
+        }
+      ) {
         edges {
           node {
             title

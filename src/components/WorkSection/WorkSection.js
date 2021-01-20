@@ -10,11 +10,13 @@ const WorkSection = (props) => {
         setShowDescription(!showDescription)
     }
 
+    console.log(props.data)
+
     return (
             <div onClick={() => clickHandler()} className={`${classes.workSectionContainer} ${props.counter % 2 == 0 ? classes.onLeft : classes.onRight}`}>
                 
                 <div className={classes.image}>
-                    <Description show={showDescription}  description={props.data.description.description}/>
+                    {props.data.description ? <Description show={showDescription}  description={props.data.description.description}/> : ''}
                     <Img 
                         fluid={props.data.image.fluid} 
                         key={props.data.image.fluid.src}
