@@ -47,7 +47,7 @@ const Navbar = ({ component }) => {
         <div className={classes.navbarContainer}>
             <div className={classes.navbar}>
                 <div className={classes.name}>
-                    <Link to="/">AURORE DEMIERRE</Link>
+                    <div className={classes.underline} onClick={() => clickHandler('')}>AURORE DEMIERRE</div>
                 </div>
                 <div>
                     {matches ? classicNav : iconNav}
