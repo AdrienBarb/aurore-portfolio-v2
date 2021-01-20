@@ -14,8 +14,6 @@ const IndexPage = () => {
 
   const timeline = gsap.timeline();
 
-  console.log(menu)
-
   useEffect(() => {
     timeline.to(app.current, {duration: 0.2, css: {visibility: 'visible'}})
     timeline.to(app.current, {duration: 0.6, opacity: 1, ease: "power2.inOut" });

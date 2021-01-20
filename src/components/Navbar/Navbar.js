@@ -3,9 +3,27 @@ import classes from './navbar.module.scss';
 import { Link } from "gatsby";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import FullNavigation from '../FullNavigation/FullNavigation';
+import { gsap } from "gsap/all";
+import { navigate } from "gatsby";
 
-const Navbar = () => {
+const Navbar = ({ component }) => {
     const matches = useMediaQuery('(min-width:768px)');
+    
+
+    
+    const timeline = gsap.timeline();
+
+    const clickHandler = (direction) => {
+        let urlArray = window.location.href.split( '/' )
+        let path = urlArray[urlArray.length - 1]
+
+        if (direction != path) {
+            timeline.to(component.current, {duration: 0.6, opacity: 0})
+            setTimeout(() => {
+                navigate(`/${direction}`)
+            }, 600);
+        }
+    }
 
     const iconNav = (
         <FullNavigation />
@@ -14,13 +32,13 @@ const Navbar = () => {
     const classicNav = (
         <ul className={classes.navLinksContainer}>
             <li className={classes.underlineContainer}>
-                <Link className={classes.underline} to="/work">WORK</Link>
+                <div className={classes.underline} onClick={() => clickHandler('work')}>WORK</div>
             </li>
             <li className={classes.underlineContainer}>
-                <Link className={classes.underline} to="/about">ABOUT</Link>
+                <div className={classes.underline} onClick={() => clickHandler('about')}>ABOUT</div>
             </li>
             <li className={classes.underlineContainer}>
-                <Link className={classes.underline} to="/contact">CONTACT</Link>
+                <div className={classes.underline} onClick={() => clickHandler('contact')}>CONTACT</div>
             </li>
         </ul>
     )

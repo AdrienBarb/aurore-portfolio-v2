@@ -29,7 +29,7 @@ const About = (props) => {
 
   return (
     <div ref={app} className={classes.app}>
-      <Navbar />
+      <Navbar component={app}/>
       <Layout>
           <div className={classes.bioWrap}>
             <div className={classes.about}>{props.data.contentfulAurore.bioTitle}</div>

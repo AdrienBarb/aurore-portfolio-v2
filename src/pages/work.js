@@ -43,7 +43,7 @@ const WorkPage = () => {
 
   return (
     <div ref={app} className={classes.app}>
-    <Navbar />
+    <Navbar component={app}/>
       <Layout>
           <ul className={classes.workSectionList}>
             {data.allContentfulWorks.edges.map((edge, index) => {

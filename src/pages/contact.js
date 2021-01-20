@@ -20,7 +20,7 @@ const ContactPage = () => {
 
   return (
     <div ref={app} className={classes.app}>
-      <Navbar />
+      <Navbar component={app}/>
       <Layout>
         <div className={classes.contactWrap}>
           <p className={classes.title}>I'm <span className={classes.italic}>looking</span> forward to hearing <span className={classes.italic}>from</span> you<span className={classes.dot}>.</span></p>
