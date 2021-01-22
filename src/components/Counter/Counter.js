@@ -8,8 +8,9 @@ const Counter = (props) => {
         let base_number = 10
         let multiple_number = Math.floor(Math.random() * 2) + 1 
         let increment_number = base_number * multiple_number
+        let limit = count + increment_number
         let time = Math.floor(Math.random() * 1000) + 200
-        if (count < 100) {
+        if (limit < 100) {
             setTimeout(() => {
                 setCount(count + increment_number)
               }, time);

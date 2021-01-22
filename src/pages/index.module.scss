@@ -4,10 +4,10 @@
 
 .video {
   position: fixed;
-  top: -10%;
-  left: -10%;
-  bottom: 0;
   right: 0;
+  bottom: -50px;
+  min-width: 100%;
+  min-height: 115%;
   z-index: 500;
 }
 
