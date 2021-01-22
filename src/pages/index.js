@@ -35,7 +35,7 @@ const IndexPage = () => {
       <div ref={app} className={classes.app}>
         <Layout>
           <HomeMenu animateOnNav={(pageDirection) => navigationHandler(pageDirection)}/>
-          <video autoPlay muted loop className={classes.video}>
+          <video playsinline autoPlay muted loop className={classes.video}>
               <source src={video} type='video/mp4' />
           </video>
         </Layout>
