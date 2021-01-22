@@ -16,7 +16,7 @@ const Counter = (props) => {
         } else {
             props.startAnimation()
         }
-    }, [count])
+    }, [count, props])
 
     return (
         <div className={classes.counterWrapper}>

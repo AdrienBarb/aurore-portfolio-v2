@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import '../styles/index.scss';
 import classes from "./index.module.scss";
 import Layout from '../components/Layout/Layout';
@@ -20,10 +20,10 @@ const IndexPage = () => {
     timeline.to(counter.current, {duration: 0, css: {visibility: 'hidden'}})
   }
 
-  const navigationHandler = (dir) => {
+  const navigationHandler = (pageDirection) => {
     timeline.to(app.current, {duration: 0.6, opacity: 0})
     setTimeout(() => {
-        navigate(`/${dir}`)
+        navigate(`/${pageDirection}`)
     }, 600);
   }
 
@@ -34,7 +34,7 @@ const IndexPage = () => {
       </div>
       <div ref={app} className={classes.app}>
         <Layout>
-          <HomeMenu animateOnNav={(dir) => navigationHandler(dir)}/>
+          <HomeMenu animateOnNav={(pageDirection) => navigationHandler(pageDirection)}/>
           <video autoPlay muted loop className={classes.video}>
               <source src={video} type='video/mp4' />
           </video>

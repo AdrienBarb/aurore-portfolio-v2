@@ -15,7 +15,7 @@ const HomeMenu = (props) => {
         gsap.to(name.current, {duration: 3, opacity: 1, ease: "power2.inOut" })
       }, [])
 
-    const clickHandler = () => {
+    const openMenuHandler = () => {
         timeline.to(name.current, {duration: 0.4, opacity: 0, ease: "power2.inOut" });
         timeline.to(name.current, {duration: 0, css: {visibility: 'hidden'}})
         timeline.to(menu.current, {duration: 0, css: {visibility: 'visible'}})
@@ -24,7 +24,7 @@ const HomeMenu = (props) => {
         timeline.to(close.current, {duration: 0.4, opacity: 1, ease: "power2.inOut", delay: -0.4 });
     }
 
-    const closeHandler = () => {
+    const closeMenuHandler = () => {
         timeline.to(close.current, {duration: 0.4, opacity: 0, ease: "power2.inOut", delay: -0.2 });
         timeline.to(close.current, {duration: 0, css: {visibility: 'hidden'}, delay: -0.2})
         timeline.to(menu.current, {duration: 0.4, opacity: 0, ease: "power2.inOut" });
@@ -35,7 +35,7 @@ const HomeMenu = (props) => {
 
     return (
         <div ref={all} className={classes.homeMenuWrapper}>
-            <div ref={name} onClick={() => clickHandler()} onKeyDown={() => clickHandler()} className={classes.name}>
+            <div ref={name} onClick={() => openMenuHandler()} onKeyDown={() => openMenuHandler()} className={classes.name}>
                 AURORE DEMIERRE
             </div>
             <div ref={menu} className={classes.homeMenuContainer}>
@@ -51,7 +51,7 @@ const HomeMenu = (props) => {
                     </li>
                 </ul>
             </div>
-            <div ref={close} onClick={() => closeHandler()} className={classes.close}>Close</div>
+            <div ref={close} onClick={() => closeMenuHandler()} className={classes.close}>Close</div>
         </div>
     )
 }

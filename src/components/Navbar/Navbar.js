@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './navbar.module.scss';
-import { Link } from "gatsby";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import FullNavigation from '../FullNavigation/FullNavigation';
 import { gsap } from "gsap/all";
@@ -17,7 +16,7 @@ const Navbar = ({ component }) => {
         let urlArray = window.location.href.split( '/' )
         let path = urlArray[urlArray.length - 1]
 
-        if (direction != path) {
+        if (direction !== path) {
             timeline.to(component.current, {duration: 0.6, opacity: 0})
             setTimeout(() => {
                 navigate(`/${direction}`)
