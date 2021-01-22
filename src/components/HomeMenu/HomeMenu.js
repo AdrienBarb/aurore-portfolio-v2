@@ -35,19 +35,19 @@ const HomeMenu = (props) => {
 
     return (
         <div ref={all} className={classes.homeMenuWrapper}>
-            <div ref={name} onClick={() => clickHandler()} onKeyDown={() => clickHandler()} className={`${classes.name}`}>
+            <div ref={name} onClick={() => clickHandler()} onKeyDown={() => clickHandler()} className={classes.name}>
                 AURORE DEMIERRE
             </div>
             <div ref={menu} className={classes.homeMenuContainer}>
                 <ul className={classes.navLinksContainer}>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('work')} onKeyDown={() => props.function('work')}  className={classes.underline}>WORK</div>
+                        <div onClick={() => props.animateOnNav('work')} onKeyDown={() => props.animateOnNav('work')}  className={classes.underline}>WORK</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('about')} onKeyDown={() => props.function('work')}  className={classes.underline}>ABOUT</div>
+                        <div onClick={() => props.animateOnNav('about')} onKeyDown={() => props.animateOnNav('work')}  className={classes.underline}>ABOUT</div>
                     </li>
                     <li className={classes.underlineContainer}>
-                        <div onClick={() => props.function('contact')} onKeyDown={() => props.function('work')}  className={classes.underline}>CONTACT</div>
+                        <div onClick={() => props.animateOnNav('contact')} onKeyDown={() => props.animateOnNav('work')}  className={classes.underline}>CONTACT</div>
                     </li>
                 </ul>
             </div>

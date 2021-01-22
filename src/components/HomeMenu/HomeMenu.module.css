@@ -58,7 +58,6 @@
     display: block;
     width: fit-content;
     text-align: center;
-    cursor: pointer;
   }
   
   .underline::after {

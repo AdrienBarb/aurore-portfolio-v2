@@ -5,22 +5,24 @@ const Counter = (props) => {
     const [count, setCount] = useState(0)
 
     useEffect(() => {
-        let ten = 10
-        let inc = Math.floor(Math.random() * 2) + 1 
-        let multiple = ten * inc
-        let time = Math.floor(Math.random() * 600) + 1 
+        let base_number = 10
+        let multiple_number = Math.floor(Math.random() * 2) + 1 
+        let increment_number = base_number * multiple_number
+        let time = Math.floor(Math.random() * 1000) + 200
         if (count < 100) {
             setTimeout(() => {
-                setCount(count + multiple)
+                setCount(count + increment_number)
               }, time);
         } else {
-            props.go()
+            props.startAnimation()
         }
     }, [count])
 
     return (
-        <div className={classes.counter}>
-            {count}%
+        <div className={classes.counterWrapper}>
+            <div className={classes.counter}>
+                {count}%
+            </div>
         </div>
     )
 }
