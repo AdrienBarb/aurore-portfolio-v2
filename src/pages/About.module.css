@@ -1,6 +1,6 @@
 .bio {
-    font-size: 62px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 300;
     text-align: justify;
     line-height: 1.2;
 }
@@ -12,7 +12,7 @@
 }
 
 .about {
-    font-size: 38px;
+    font-size: 72px;
     font-weight: 800;
     color: #FFCB47;
     font-style: italic;

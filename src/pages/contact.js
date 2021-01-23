@@ -28,7 +28,7 @@ const ContactPage = () => {
           <div className={classes.content}><a href="tel:0618018634">+33 6 18 01 86 34</a></div>
           <div className={classes.iconWrapper}>
             <a href="https://www.linkedin.com/in/aurore-demierre/"><FaLinkedinIn className={classes.icon}/></a>
-            <a href="https://www.instagram.com/auroredemierre/"><FaInstagram className={classes.icon}/></a>
+            <a href="https://www.instagram.com/goodthingshappn/"><FaInstagram className={classes.icon}/></a>
           </div>
         </div>
       </Layout>
