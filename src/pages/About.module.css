@@ -1,8 +1,6 @@
-.bio {
-    font-size: 36px;
-    font-weight: 300;
-    text-align: justify;
-    line-height: 1.2;
+.app {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .bioWrap {
@@ -19,27 +17,19 @@
     margin-bottom: 1rem;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 500;
+.bio {
+    font-size: 36px;
+    font-weight: 300;
     text-align: justify;
-}
-
-.app {
-    visibility: hidden;
-    opacity: 0;
+    line-height: 1.2;
 }
 
 @media (max-width: 425px) {
-    .bio {
+    .about {
         font-size: 36px;
     }
 
-    .about {
+    .bio {
         font-size: 22px;
-    }
-    
-    .title {
-        font-size: 26px;
     }
 }
