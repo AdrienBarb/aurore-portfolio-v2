@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import '../styles/index.scss';
 import classes from "./index.module.scss";
-import Layout from '../components/Layout/Layout';
-import { gsap } from "gsap/all";
-import video from '../styles/images/site-aurore.mp4';
+import Layout from '../components/Layout/Layout'
+import { gsap } from "gsap/all"
 import HomeMenu from '../components/HomeMenu/HomeMenu'
 import { navigate } from "gatsby";
 import Counter from '../components/Counter/Counter'
@@ -35,9 +34,6 @@ const IndexPage = () => {
       <div ref={app} className={classes.app}>
         <Layout>
           <HomeMenu animateOnNav={(pageDirection) => navigationHandler(pageDirection)}/>
-          {/* <video playsinline autoPlay muted loop className={classes.video}>
-              <source src={video} type='video/mp4' />
-          </video> */}
           <div className={classes.picture}></div>
         </Layout>
       </div> 
